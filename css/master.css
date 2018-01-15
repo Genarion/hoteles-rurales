@@ -1,0 +1,227 @@
+.welcome{
+  text-shadow: 0 13.36px 8.896px #c4b59d,0 -2px 1px #fff;
+  letter-spacing: -2px;
+  text-align: right;
+}
+#welcome-image{
+  width: 60vw;
+  height: auto;
+  margin: 5rem;
+}
+.unlink{
+  text-decoration: none;
+  color: #000;
+}
+
+header{
+  background-color: rgb(17, 110, 65);
+}
+header h1{
+  margin: 0;
+  padding: 2rem;
+  text-align: center;
+  color: white;
+  text-shadow: 0.8px 1.7px #000000;
+}
+header h1 a{
+  text-decoration: none;
+  color: white;
+}
+
+nav{
+  background-color: rgb(19, 175, 100);
+}
+nav form{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hotel-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.hotel {
+  margin: 1.2rem 0 1.2rem 0;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 32rem;
+}
+
+.hotel:hover {
+  box-shadow: 0 6px 10px 0 rgba(0,0,0,0.2);
+}
+
+.hotel img{
+  max-width: 100%;
+  height: 24.2em;
+}
+.hotel h3{
+  text-align: center;
+}
+.hotel p{
+  margin-left: 1.8rem;
+}
+#button-reserva{
+  margin: 0.5rem;
+  padding: 0.45rem 0.65rem 0.45rem 0.65rem;
+  background-color: rgb(17, 110, 65);
+  text-align: center;
+}
+#button-reserva:hover{
+  text-shadow: 0.8px 1.7px #000000;
+  box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);
+  transition: 0.3s;
+}
+#button-reserva a{
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 2vw;
+  width: 0 auto;
+}
+
+footer{
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(17, 110, 65);
+}
+footer p{
+  color: white;
+}
+footer a{
+  text-decoration: none;
+  color: white;
+}
+
+
+.hotel-images{
+  box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
+  margin: 1.2rem;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
+}
+.image-selected{
+  width: 70%;
+}
+.image-selected img{
+  width: 100%;
+  height: 100%;
+}
+.total-images{
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+}
+.total-images img{
+  max-width: 125px;
+  height: 125px;
+}
+
+.hotel-description{
+  display: inline-block;
+  width: 70%;
+}
+.hotel-description h2{
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.hotel-description h3{
+  margin: 0.9rem 2rem 0.9rem 2rem;
+}
+.hotel-description p{
+  margin: 0.7rem 2rem 0.7rem 2rem;
+  text-align: justify;
+}
+
+.reserva{
+  box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
+  padding: 0.5rem;
+  display: inline-block;
+  vertical-align: top;
+  width: 27%;
+}
+
+.reserva h3{
+   text-align: center;
+}
+.reserva form{
+  display: flex;
+  flex-direction: column;
+
+}
+.reserva form p{
+  text-align: center;
+}
+#enviar-reserva{
+  margin: 0.5rem;
+  padding: 0.45rem 0.65rem 0.45rem 0.65rem;
+  background-color: rgb(17, 110, 65);
+  border: 0 none;
+  text-align: center;
+  color: #FFFFFF;
+}
+#enviar-reserva:hover{
+  text-shadow: 0.6px 1.5px #000000;
+  box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
+  transition: 0.3s;
+}
+
+
+/* Para moviles */
+@media only screen and (max-width: 768px) {
+  nav{
+    padding: 0.8rem 0 0.8rem 0;
+  }
+  nav form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+  }
+  nav form p{
+    text-align: center;
+  }
+
+  #button-reserva a{
+    font-size: 4.5vw;
+  }
+
+  .hotel-images{
+    margin: 1.2rem;
+    flex-direction: column;
+  }
+  .image-selected{
+    width: 100%;
+  }
+  .total-images{
+    width: 100%;
+    justify-content: space-between;
+  }
+  .total-images img{
+    max-width: 50px;
+    height: 50px;
+  }
+
+  .hotel-description{
+    display: block;
+    width: 100%;
+  }
+  .reserva{
+    display: block;
+    width: 100%;
+  }
+
+}

@@ -38,6 +38,10 @@ nav form{
   justify-content: space-between;
   align-items: center;
 }
+nav form input{
+  /* width: 100%; */
+  margin: 0 auto;
+}
 
 .hotel-container{
   display: flex;
